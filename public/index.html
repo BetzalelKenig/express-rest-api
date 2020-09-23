@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add user</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="http://localhost:3000/api/users" method="post">
+        <label for="firstName">First name</label>
+        <input name="firstName" firstName type="text" id="firstName">
+        <label for="lastName">Last name</label>
+        <input name="lastName" type="text" id="lastName">
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email">
+        <label for="passowrd">Passowrd</label>
+        <input name="password" type="password" id="passowrd">
+        <input class="btn btn-success" type="submit" value="Add" />
+    </form>
+</body>
+
+</html>
