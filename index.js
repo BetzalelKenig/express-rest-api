@@ -13,10 +13,12 @@ app.use(express.json());
 
 
 
-// serv index.html
+// serve index.html
 router.get('/', (req, res) => {
     res.sendFile('index.html');
 });
+
+
 
 // send all users from db
 app.get('/api/users', (req, res) => {
@@ -88,6 +90,6 @@ app.put('/api/users/:id', (req, res) => {
 
 
 app.use('/', router);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3005;
 
 app.listen(port);
