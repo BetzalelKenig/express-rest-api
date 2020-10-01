@@ -27,7 +27,17 @@
         </ul>
     </nav>
 
-    <h1>Hello to users registration</h1>
+    <form action="http://localhost:3005/api/users" method="post">
+        <label for="firstName">First name</label>
+        <input name="firstName" firstName type="text" id="firstName" />
+        <label for="lastName">Last name</label>
+        <input name="lastName" type="text" id="lastName" />
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email" />
+        <label for="passowrd">Passowrd</label>
+        <input name="password" type="password" id="passowrd" />
+        <input class="btn btn-success" type="submit" value="Add" />
+    </form>
 </body>
 
 </html>
